@@ -180,10 +180,19 @@ footer input[type="text"], footer input[type="email"], footer textarea{
 @media screen and (max-width: 576px) {
     .skills-container,
     .resume-container,
-     footer{
+     footer,
+    .about-items,
+    nav,
+    nav > ul,
+    .banner{
         flex-direction: column;
     }
-    footer{
+    nav > ul{
+        gap: 10px;
+    }
+    footer, 
+    .about,
+    nav{
         padding: 20px;
     }
     .footer-column{
@@ -191,4 +200,19 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     }
     .btn-primary{
         margin-bottom: 40px;}
+        .banner,
+        nav{
+            margin: 0 auto;
+        }
+        
+    .header{
+background-image: none;
+    }
+    .banner-profile-pic{
+        width: 100%;
+    }
+    .banner > button{
+        display: flex;
+        flex-direction: column;
+    }
 }
